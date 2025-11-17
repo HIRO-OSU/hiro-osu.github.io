@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HIRO · Humanoid Actuator R&D</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body class="project-page">
+    <header class="site-header">
+      <div class="wrapper header-inner">
+        <div class="logo">
+          <a href="../index.html" class="logo-link" aria-label="Back to HIRO home">
+            <img src="../assets/images/logo.png" alt="HIRO club logo" class="logo-image" />
+          </a>
+          <div class="logo-text">
+            <strong>Humanoid &amp; Intelligent Robotics Organization</strong>
+            <small>Oregon State University Robotics Club</small>
+          </div>
+        </div>
+        <nav>
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#projects">Projects</a>
+          <a href="../index.html#sponsors">Sponsors</a>
+          <a href="../index.html#join">Join</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-hero">
+        <div class="wrapper">
+          <p class="eyebrow">Project detail</p>
+          <h1>Humanoid Actuator Development</h1>
+          <p class="lead">
+            Before we can build a capable humanoid platform, we are engineering cost-effective actuators that mix
+            high-power drone motors with advanced 3D printed cycloidal gearboxes.
+          </p>
+          <div class="project-meta">
+            <article>
+              <h3>Goal</h3>
+              <p>Create compact, high-torque, low-backlash joints for future HIRO humanoids.</p>
+            </article>
+            <article>
+              <h3>Strategies</h3>
+              <p>Drone motors, additive manufacturing, and composite cycloidal plates with embedded sensing.</p>
+            </article>
+            <article>
+              <h3>Inspiration</h3>
+              <p>OpenTorque open hardware actuator ecosystem plus industrial cobot best practices.</p>
+            </article>
+          </div>
+          <div class="project-links">
+            <a class="btn primary" href="../index.html#join">Meet the actuation pod</a>
+            <a class="btn secondary" href="https://github.com/G-Levine/OpenTorque-Actuator" target="_blank" rel="noreferrer"
+              >Learn from OpenTorque</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section project-content">
+        <div class="wrapper narrow">
+          <div class="section-header">
+            <p class="eyebrow">Mission</p>
+            <h2>Accessible actuators, scalable humanoid hardware.</h2>
+            <p>
+              Custom actuators are often the most expensive and time-consuming part of a humanoid build. We are
+              redesigning the stack with commodity drone motors, PAHT-CF prints, and test coupons in PPA-CF to
+              identify the lightest, strongest cycloidal stages for our humanoid joints while learning from OpenTorque's
+              nylon planetary baseline and translating those lessons into our cycloidal layout.
+            </p>
+          </div>
+          <div class="project-next">
+            <article>
+              <h3>Motor selection</h3>
+              <p>Benchmarking drone outrunners for torque density and thermal performance.</p>
+            </article>
+            <article>
+              <h3>Gearbox experiments</h3>
+              <p>Evaluating PAHT-CF today and considering PPA-CF for future higher-temp tooth profiles.</p>
+            </article>
+            <article>
+              <h3>Embedded sensing</h3>
+              <p>Integrating low-cost encoders and temperature sensors for closed-loop control.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section resource-gallery">
+        <div class="wrapper">
+          <div class="section-header">
+            <p class="eyebrow">References</p>
+            <h2>Open-source actuator inspiration</h2>
+            <p>
+              OpenTorque gives us a transparent blueprint for 3D printed drives, allowing us to remix ideas for HIRO's
+              material stack.
+            </p>
+          </div>
+          <div class="resource-grid">
+            <a href="https://github.com/G-Levine/OpenTorque-Actuator" target="_blank" rel="noreferrer" class="resource-card">
+              <img src="../assets/images/projects/actuator/openTorqueExplodedView.png" alt="OpenTorque actuator reference" />
+              <div>
+                <h3>OpenTorque</h3>
+                <p>Community-driven planetary actuator platform using generic nylon prints with BOMs, FEA breakdowns, and guides.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section project-content">
+        <div class="wrapper narrow">
+          <div class="section-header">
+            <p class="eyebrow">Roadmap</p>
+            <h2>From single joint prototypes to a complete humanoid.</h2>
+            <p>
+              Our roadmap progresses from torque cells to limb assemblies, ensuring every iteration feeds into the
+              eventual HIRO humanoid.
+            </p>
+          </div>
+          <ul class="project-checklist">
+            <li><span>✔</span> Component selection and initial CAD</li>
+            <li><span>…</span> First additive prototypes with PAHT-CF</li>
+            <li><span>…</span> Load testing and validation</li>
+            <li><span>…</span> Integrated motor driver PCB bring-up</li>
+            <li><span>…</span> Humanoid arm assembly and integration</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper footer-inner">
+        <div>
+          <strong>Humanoid &amp; Intelligent Robotics Organization</strong>
+          <p>Oregon State University · Corvallis, OR</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:hiro.clubs@oregonstate.edu">hiro.clubs@oregonstate.edu</a>
+        </div>
+      </div>
+      <p class="footer-note">Built by the founding members of HIRO — inspire the robots you want to meet.</p>
+    </footer>
+  </body>
+</html>
