@@ -155,18 +155,20 @@ nav a {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.btn.with-logo {
+.btn.onshape {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
 }
 
-.btn-logo {
+.btn.onshape::before {
+  content: "";
   width: 18px;
   height: 18px;
-  object-fit: contain;
+  flex: 0 0 18px;
   border-radius: 4px;
+  background: url("../images/sponsors/onshape/onshape-favicon.png") center / contain no-repeat;
 }
 
 .btn.primary {
