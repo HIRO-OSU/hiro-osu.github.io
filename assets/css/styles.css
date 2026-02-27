@@ -155,6 +155,20 @@ nav a {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.btn.with-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-logo {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
 .btn.primary {
   background: var(--accent-gradient);
   color: #0d0f1d;
@@ -454,6 +468,11 @@ nav a {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   padding: 0.75rem;
+}
+
+.gallery-grid figure.actuator-render {
+  max-width: 540px;
+  margin: 0 auto;
 }
 
 .gallery-grid img {

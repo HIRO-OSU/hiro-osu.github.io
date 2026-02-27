@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HIRO · Cycloidal Actuator Prototype (Archived)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body class="project-page">
+    <header class="site-header">
+      <div class="wrapper header-inner">
+        <div class="logo">
+          <a href="../index.html" class="logo-link" aria-label="Back to HIRO home">
+            <img src="../assets/images/logo.png" alt="HIRO club logo" class="logo-image" />
+          </a>
+          <div class="logo-text">
+            <strong>Humanoid &amp; Intelligent Robotics Organization</strong>
+            <small>Oregon State University Robotics Club</small>
+          </div>
+        </div>
+        <nav>
+          <a href="../index.html#projects">Projects</a>
+          <a href="../index.html#sponsors">Sponsors</a>
+          <a href="../index.html#join">Join</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-hero">
+        <div class="wrapper">
+          <p class="eyebrow">Project detail</p>
+          <h1>HIRO Cycloidal Actuator Prototype</h1>
+          <p class="lead">
+            We designed a 3D printed cycloidal actuator prototype with a 10:1 reduction ratio using a
+            FreeRCHobby 8318 motor and an ODrive Pro. Theoretical peak output torque was 50 Nm. The
+            prototype was promising, but after a price and performance review against Robstride actuators,
+            we ended the project and selected Robstride actuators for our humanoid build.
+          </p>
+          <div class="project-meta">
+            <article>
+              <h3>Status</h3>
+              <p>Archived after feasibility review and make-vs-buy decision.</p>
+            </article>
+            <article>
+              <h3>Geartrain</h3>
+              <p>3D printed cycloidal actuator, 10:1 reduction ratio.</p>
+            </article>
+            <article>
+              <h3>Drive stack</h3>
+              <p>FreeRCHobby 8318 motor paired with an ODrive Pro controller.</p>
+            </article>
+            <article>
+              <h3>Peak output</h3>
+              <p>50 Nm theoretical peak output torque.</p>
+            </article>
+            <article>
+              <h3>Outcome</h3>
+              <p>Purchase Robstride actuators for the HIRO humanoid instead of continuing this design.</p>
+            </article>
+          </div>
+          <div class="project-links">
+            <a
+              class="btn primary with-logo"
+              href="https://cad.onshape.com/documents/9f4c8946b01c2aba5c51c078/w/342778aeffc6412f397eaa06/e/623973056bafabb77e61548a"
+              target="_blank"
+              rel="noreferrer"
+              ><img class="btn-logo" src="../assets/images/sponsors/onshape/onshape-favicon.png" alt="" aria-hidden="true" />View Onshape CAD</a
+            >
+            <a class="btn secondary" href="../index.html#projects">Back to projects</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section project-content">
+        <div class="wrapper narrow">
+          <div class="section-header">
+            <p class="eyebrow">Overview</p>
+            <h2>A focused actuator prototype, built to answer a program-level question.</h2>
+            <p>
+              This project was a feasibility study for student-built humanoid actuators. The goal was not just to
+              produce torque, but to understand whether a club-scale custom actuator program could beat an available
+              commercial option on cost, performance, and development time. It gave our team hands-on experience in
+              cycloidal drivetrain design, packaging, motor/controller integration, and engineering trade studies.
+            </p>
+          </div>
+          <div class="gallery-grid">
+            <figure class="actuator-render">
+              <img src="../assets/images/projects/actuator/hiro-cycloidal-actuator.png" alt="HIRO 3D printed cycloidal actuator render" />
+              <figcaption>10:1 cycloidal reduction actuator prototype, 50 Nm theoretical peak output.</figcaption>
+            </figure>
+          </div>
+          <div class="project-next">
+            <article>
+              <h3>Mechanical concept</h3>
+              <p>Compact cycloidal architecture designed for humanoid joint packaging with a 3D printed reduction stage.</p>
+            </article>
+            <article>
+              <h3>Electrical stack</h3>
+              <p>High-power 8318 outrunner + ODrive Pro control stack for rapid bring-up and validation.</p>
+            </article>
+            <article>
+              <h3>Decision focus</h3>
+              <p>Evaluate price, expected performance, and schedule risk against Robstride actuator options.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section project-content">
+        <div class="wrapper narrow">
+          <div class="section-header">
+            <p class="eyebrow">Postmortem</p>
+            <h2>Why we stopped this project and what we learned</h2>
+            <p>
+              We concluded that this actuator concept was not competitive with Robstride actuators for our current
+              humanoid timeline. A fully custom actuator program could likely become competitive, but only with much
+              deeper custom design work and a longer development schedule than our team can currently support.
+            </p>
+          </div>
+          <ul class="project-checklist">
+            <li><span>✔</span> Completed actuator concept CAD and packaging study</li>
+            <li><span>✔</span> Defined drive stack around FreeRCHobby 8318 + ODrive Pro</li>
+            <li><span>✔</span> Performed make-vs-buy comparison against Robstride actuators</li>
+            <li><span>✔</span> Chose to buy Robstride actuators for the humanoid program</li>
+            <li><span>…</span> Potential future revisit only as a dedicated custom actuator effort</li>
+          </ul>
+          <div class="project-next">
+            <article>
+              <h3>What worked</h3>
+              <p>
+                The concept was technically promising and valuable for learning cycloidal actuator design, packaging, and
+                subsystem integration constraints.
+              </p>
+            </article>
+            <article>
+              <h3>Primary blocker</h3>
+              <p>
+                For our current schedule, the expected price/performance outcome did not justify continued iteration over
+                commercial Robstride options.
+              </p>
+            </article>
+            <article>
+              <h3>Program impact</h3>
+              <p>
+                Ending the project reduces schedule risk and lets the team focus effort on humanoid integration and
+                higher-leverage subsystems.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section resource-gallery">
+        <div class="wrapper">
+          <div class="section-header">
+            <p class="eyebrow">Artifacts</p>
+            <h2>References and components</h2>
+            <p>External references and components.</p>
+          </div>
+          <div class="resource-grid">
+            <a href="https://github.com/G-Levine/OpenTorque-Actuator" target="_blank" rel="noreferrer" class="resource-card">
+              <img src="../assets/images/projects/actuator/openTorqueExplodedView.png" alt="OpenTorque actuator reference" />
+              <div>
+                <h3>OpenTorque</h3>
+                <p>Comparative reference.</p>
+              </div>
+            </a>
+            <a href="https://shop.odriverobotics.com/products/odrive-pro" target="_blank" rel="noreferrer" class="resource-card">
+              <img src="../assets/images/projects/actuator/odrive-pro-board.jpg" alt="ODrive Pro motor controller" />
+              <div>
+                <h3>ODrive Pro</h3>
+                <p>Motor controller.</p>
+              </div>
+            </a>
+            <a
+              href="https://www.freerchobby.cc/products/mp-8318-2870w-brushless-motor-for-agricultural-uav-drone"
+              target="_blank"
+              rel="noreferrer"
+              class="resource-card"
+            >
+              <img src="../assets/images/projects/actuator/freerchobby-mp8318.jpg" alt="FreeRCHobby MP 8318 brushless motor" />
+              <div>
+                <h3>FreeRCHobby MP 8318</h3>
+                <p>Prototype drive motor.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper footer-inner">
+        <div>
+          <strong>Humanoid &amp; Intelligent Robotics Organization</strong>
+          <p>Oregon State University · Corvallis, OR</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:hiro.clubs@oregonstate.edu">hiro.clubs@oregonstate.edu</a>
+        </div>
+      </div>
+      <p class="footer-note">Built by the founding members of HIRO — inspire the robots you want to meet.</p>
+    </footer>
+  </body>
+</html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HIRO · SO101 Arm VLA Deployment</title>
+    <title>HIRO · SO101 Arm VLA Program</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,7 +26,6 @@
           </div>
         </div>
         <nav>
-          <a href="../index.html#about">About</a>
           <a href="../index.html#projects">Projects</a>
           <a href="../index.html#sponsors">Sponsors</a>
           <a href="../index.html#join">Join</a>
@@ -40,13 +39,13 @@
           <p class="eyebrow">Project detail</p>
           <h1>SO101 Arm · Visual Language Action Deployment</h1>
           <p class="lead">
-            Deploying and benchmarking visual language action (VLA) models on our SO101 arm to unlock
-            reliable autonomous manipulation demos—from tic-tac-toe to pick-and-place—on Jetson Thor.
+            We are training the SO101 arm to autonomously play tic-tac-toe using GR00T 1.6 + a local VLM
+            on Jetson Thor.
           </p>
           <div class="project-meta">
             <article>
               <h3>Goal</h3>
-              <p>Run NVIDIA GR00T 1.5 + local VLM pipelines for single-task autonomy.</p>
+              <p>Demonstrate fully autonomous tic-tac-toe on SO101.</p>
             </article>
             <article>
               <h3>Hardware</h3>
@@ -54,7 +53,7 @@
             </article>
             <article>
               <h3>Focus</h3>
-              <p>VLA inference, closed-loop control, onboard training experiments.</p>
+              <p>VLA inference, control reliability, and onboard training experiments.</p>
             </article>
           </div>
           <div class="project-links">
@@ -62,7 +61,7 @@
               >SO101 Arm Repo</a
             >
             <a class="btn secondary" href="https://github.com/NVIDIA/Isaac-GR00T" target="_blank" rel="noreferrer"
-              >GR00T VLA Reference</a
+              >GR00T Reference</a
             >
           </div>
         </div>
@@ -72,17 +71,16 @@
         <div class="wrapper narrow">
           <div class="section-header">
             <p class="eyebrow">Mission</p>
-            <h2>Teach a robotic arm to reason about tasks the way we do.</h2>
+            <h2>Make SO101 play tic-tac-toe autonomously.</h2>
             <p>
-              We are replicating NVIDIA's GR00T 1.5 recipe and pairing it with a lightweight local VLM to
-              understand the tradeoffs in latency, tactile response, and reliability for simple single-task
-              experiences. Our immediate milestone is to autonomously play tic-tac-toe while narrating moves.
+              GR00T 1.6 and a lightweight local VLM are our current stack for perception, move selection,
+              and execution. Tic-tac-toe is the primary benchmark before scaling to broader tasks.
             </p>
           </div>
           <ul class="project-checklist">
             <li><span>✔</span> SO101 follower/leader teleoperation</li>
             <li><span>✔</span> Teleop-to-dataset pipeline</li>
-            <li><span>…</span> Gr00t 1.5 finetuning for tic-tac-toe</li>
+            <li><span>…</span> GR00T 1.6 finetuning for tic-tac-toe</li>
             <li><span>…</span> Local VLM integration for task determination</li>
             <li><span>…</span> Release reproducible deployment guide for campus outreach</li>
           </ul>
@@ -92,9 +90,9 @@
       <section class="section resource-gallery">
         <div class="wrapper">
           <div class="section-header">
-            <p class="eyebrow">Resources</p>
-            <h2>Repo + model snapshots</h2>
-            <p>Jump straight into the code or explore the foundation models inspiring our approach.</p>
+            <p class="eyebrow">Artifacts</p>
+            <h2>References and components</h2>
+            <p>External references and components.</p>
           </div>
           <div class="resource-grid">
             <a
@@ -106,7 +104,7 @@
               <img src="../assets/images/projects/so101/so101Arm.png" alt="SO101 arm repository" />
               <div>
                 <h3>SO101 Arm Repository</h3>
-                <p>CAD, URDF, firmware notes, and deployment scripts maintained by the HIRO controls pod.</p>
+                <p>CAD, URDF, firmware notes, and deployment scripts for the SO101 platform.</p>
               </div>
             </a>
             <a
@@ -118,36 +116,9 @@
               <img src="../assets/images/projects/so101/gr00tTicTacToeBot.png" alt="NVIDIA GR00T VLA reference" />
               <div>
                 <h3>GR00T VLA</h3>
-                <p>NVIDIA's foundation model for robot control that we are adapting for Jetson Thor demos.</p>
+                <p>NVIDIA's foundation model stack adapted for Jetson Thor demos.</p>
               </div>
             </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section project-content">
-        <div class="wrapper narrow">
-          <div class="section-header">
-            <p class="eyebrow">Next milestones</p>
-            <h2>From board games to general-purpose manipulation.</h2>
-            <p>
-              After the tic-tac-toe showcase we will add expressive gestures, integrate tactile pads, and scale to
-              multi-step pick-and-place sequences for outreach events.
-            </p>
-          </div>
-          <div class="project-next">
-            <article>
-              <h3>Autonomous tic-tac-toe</h3>
-              <p>Demonstrate full-loop inference, speech, and motion using GR00T 1.5.</p>
-            </article>
-            <article>
-              <h3>Offline VLM</h3>
-              <p>Benchmark a local model that can run without connectivity for classroom demos.</p>
-            </article>
-            <article>
-              <h3>Shareable playbook</h3>
-              <p>Publish reproducible instructions and BOM so other student teams can build on top.</p>
-            </article>
           </div>
         </div>
       </section>
